@@ -1,7 +1,15 @@
-package np.com.bimalkafle.easydictionary
+package dictapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.View
+import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import dictapp.databinding.ActivityMainBinding
+import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,8 +30,6 @@ class MainActivity : AppCompatActivity() {
         adapter = MeaningAdapter(emptyList())
         binding.meaningRecyclerView.layoutManager = LinearLayoutManager(this)
         binding.meaningRecyclerView.adapter = adapter
-
-
     }
 
     private fun getMeaning(word: String) {
@@ -46,8 +52,6 @@ class MainActivity : AppCompatActivity() {
                     Toast.makeText(applicationContext,"Something went wrong",Toast.LENGTH_SHORT).show()
                 }
             }
-
-
         }
     }
 

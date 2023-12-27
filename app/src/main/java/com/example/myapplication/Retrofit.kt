@@ -1,4 +1,4 @@
-package np.com.bimalkafle.easydictionary
+package dictapp
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

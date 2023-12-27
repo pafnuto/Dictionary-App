@@ -1,4 +1,4 @@
-package np.com.bimalkafle.easydictionary
+package dictapp
 
 import retrofit2.Response
 import retrofit2.http.GET
